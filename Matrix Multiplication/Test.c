@@ -37,7 +37,11 @@ int main() {
     parallel_matrix_multiplication_1(A, B, C_1, n);
     parallel_matrix_multiplication_2(A, B, C_2, n);
 
-
+     for (int i = 0; i < n; i++) {
+        free(A[i]); free(B[i]), free(C_seq[i]);
+        free(C_1[i]); free(C_2[i]);
+    }
+    
     free(A), free(B), free(C_seq); free(C_1); free(C_2);
 
     return 0;
