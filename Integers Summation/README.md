@@ -1,7 +1,7 @@
 # Integers Summation 
 
 | Method | N | Number of Threads | Samples | Time |
-|--------|---|-------------------|---------|------|
+|--------|---|:-:|---------|------|
 | **Sequential** | 100 | 5 | 1,000,000 | 0.000000 seconds |
 | **Critical Section** | 100 | 5 | 1,000,000 | 0.000042 seconds |
 | **Atomic Lock** | 100 | 5 | 1,000,000 | 0.000055 seconds |
