@@ -1,3 +1,5 @@
+#Comparing Various Ways of Implementing the Matrix Multiplication Algorithm
+
 | Method | Matrix Size | Number of Threads | Samples | Time |
 |--------|:-: |:-:|:-:|:-:|
 | **Sequential** | 100 | N/A | 1,000 | 0.003197 seconds |
