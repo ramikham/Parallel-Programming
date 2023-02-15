@@ -1,4 +1,4 @@
-#Comparing Various Ways of Implementing the Matrix Multiplication Algorithm
+# Comparing Various Ways of Implementing the Matrix Multiplication Algorithm
 
 | Method | Matrix Size | Number of Threads | Samples | Time |
 |--------|:-: |:-:|:-:|:-:|
