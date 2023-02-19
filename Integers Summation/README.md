@@ -1,5 +1,7 @@
 # Integers Summation 
 
+The file **Integers_Summation.h** contains several implementations of parallel programs that computes $$\sum_{i=1}^{n} i$$. I tried to run the programs using several number of threads to compare the parallel techniques used in the implementations.
+
 | Method | N | Number of Threads | Samples | Time |
 |--------|---|:-:|---------|------|
 | **Sequential** | 100 | 5 | 1,000,000 | 0.000000 seconds |
@@ -17,6 +19,8 @@
 | **Reduction** | 100 | 10 | 1,000,000 | 0.000074 seconds |
 | **Reduction (static)** | 100 | 10 | 1,000,000 | 0.000076 seconds |
 | **Reduction (Dynamic, 10)** | 100 | 10 | 1,000,000 | 0.000030 seconds |
+
+We can see that the reduction() clause performs very well compared to the other parallel techniques. 
 
 ## Dynamic Scheduling 
 
