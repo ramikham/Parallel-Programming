@@ -1,6 +1,6 @@
 # Integers Summation 
 
-The file **Integers_Summation.h** contains several implementations of parallel programs that computes $$\sum_{i=1}^{n} i$$. I tried to run the programs using several number of threads to compare the parallel techniques used in the implementations.
+The file **Integers_Summation.h** contains several implementations of parallel programs that computes $$\sum_{i=1}^{n} i$$ I tried to run the programs using several number of threads to compare the parallel techniques used in the implementations.
 
 | Method | N | Number of Threads | Samples | Time |
 |--------|---|:-:|---------|------|
