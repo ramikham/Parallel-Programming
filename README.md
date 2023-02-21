@@ -6,3 +6,4 @@ This repository contains several projects that demonstrate parallel programming 
 * Matrix Multiplaing
 * Integers Summation
 * Approximating PI 
+* Sorting
