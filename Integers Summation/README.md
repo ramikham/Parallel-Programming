@@ -1,6 +1,6 @@
 # Integers Summation 
 
-The file **Integers_Summation.h** contains several implementations of parallel programs that computes $$\sum_{i=1}^{n} i$$ I tried to run the programs using several number of threads to compare the parallel techniques used in the implementations.
+The file **Integers_Summation.h** contains several implementations of parallel programs that computes $$\sum_{i=1}^{n} i$$ I ran the various methods using several number of threads to compare the parallel techniques used in the implementations.
 
 | Method | N | Number of Threads | Samples | Time |
 |--------|---|:-:|---------|------|
@@ -10,6 +10,8 @@ The file **Integers_Summation.h** contains several implementations of parallel p
 | **Reduction** | 100 | 5 | 1,000,000 | 0.000031 seconds |
 | **Reduction (static)** | 100 | 5 | 1,000,000 | 0.000024 seconds |
 | **Reduction (Dynamic, 20)** | 100 | 5 | 1,000,000 | 0.000021 seconds |
+
+<br>
 
 | Method | N | Number of Threads | Samples | Time |
 |--------|---|:-:|---------|------|
@@ -37,5 +39,7 @@ I tried to run the Integers Summation parallel code using the Dynamic(chunk_size
 | **Reduction (Dynamic, 50,000,000)** | 100,000,000 | 10 | 1,000,000 | 0.068958 seconds|
 | **Reduction (Dynamic, 80,000,000)** | 100,000,000 | 10 | 1,000,000 | 0.108631 seconds |
 | **Reduction (Dynamic, 100,000,000)** | 100,000,000 | 10 | 1,000,000 | 0.134433 seconds |
+
+<br>
 
 Using a *chunk_size = number_of_iterations(=N) / number_of_threads* is generally a good starting point (the result is shown above in *italics*). Increasing the chunk_size has a deteriorating effect on the total runtime. Moreover, choosing a *chunk_size* that is not divisible by *N* yields slow runtimes. This can be observed in the table for *N* = 19,000,000 and *N* = 21,000,000; both are drastically slower than *N* = 20,000,000. 
