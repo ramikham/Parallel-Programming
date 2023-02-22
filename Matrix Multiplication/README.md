@@ -1,6 +1,6 @@
 # Comparing Various Ways of Implementing Parallelizing the Matrix Multiplication Algorithm
 
-The file *Matrix_Multiplication.h* contains the following methods of implementing matrix multiplicaiton:
+The file ***Matrix_Multiplication.h*** contains the following methods for implementing matrix multiplicaiton:
  * Sequential algorithm: Implemented using the O(n<sup>3</sup>) algorithm, so it used three for-loops
  * Using the collapse(2) clause to parallelize the two outermost loops together
  * Parallelizing the two outermost separately 
@@ -21,6 +21,8 @@ The file *Matrix_Multiplication.h* contains the following methods of implementin
 | **Collapse(2)** | 100 | 15 | 1,000 | 0.000641 seconds |
 | **Separate Parallel Loops** | 100 | 15 | 1,000 | 0.000717 seconds |
 | **Transpose Speedup** | 100 | 15 | 1,000 | 0.000399 seconds |
+
+</br>
 
 Observations:
  * Parallel Matrix Multpication benefits  when the parallel function uses more threads (unlike Integers Summation)
